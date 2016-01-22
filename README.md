@@ -7,4 +7,7 @@ Not ready for release.  Much left to do.
 Written by and Copyright 2016 Greg Raaum.  Use or distribution of this software requires a license.
 
 ###Screenshots
+
+This is the actual size.
+
 ![](screenshots/player.png)
