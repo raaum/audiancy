@@ -9,6 +9,7 @@ Not ready for release.
 ###Features
 
 - HTML5 and Web Audio API compatible
+- Mobile/Tablet device compatible
 - Cover art support (optional)
 - Internationalization support
 - Custom icon font face with CSS styling
