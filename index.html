@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Audio</title>
+<link href='https://fonts.googleapis.com/css?family=Hind:400,700' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/audioplayer.css">
+<link rel="stylesheet" type="text/css" href="css/audioplayer.icons.css">
+</head>
+<body>
+
+<div id="audioplayer" class="wrapper">
+<div class="posterwrap"></div>
+<span id="panel_button" class="icon-three-bars"></span>
+<div id="playlist_panel">
+<div id="playlist_search"></div>
+<div id="playlist_results"></div>
+<div id="playlist_pagination"></div>
+</div>
+
+<div id="controls">
+<div id="previousdiv" class="col-previous"><span id="previous" class="icon-previous"></span></div>
+<div id="pausediv" class="col-pause"><span id="pause" class="icon-pause"></span></div>
+<div id="playdiv" class="col-play"><span id="play" class="icon-play2"></span></div>
+<div id="nextdiv" class="col-next"><span id="next" class="icon-next"></span></div>
+<div id="stopdiv" class="col-stop"><span id="stop" class="icon-stop"></span></div>
+</div>
+
+<div class="canvaswrapper">
+<canvas class="visualizer" height=60></canvas>
+<canvas class="visualizer2" height=60></canvas>
+</div>
+
+<div id="titlebar"></div>
+<div id="audio_title" class="audio_title"></div>
+<div id="audio_artist" class="audio_artist"></div>
+<div id="audio_album" class="audio_album"></div>
+<div id="audio_duration" class="audio_duration"></div>
+<div id="audio_time_elapsed" class="audio_time_elapsed"></div>
+<div id="audio_time_left" class="audio_time_left"></div>
+<div id="audio_volume" class="audio_volume"></div>
+<div id="audio_mute" class="audio_mute"></div>
+<div id="audio_progress_bar" class="progress_bar"><span id="audio_progress" class="audio_progress"></span></div>
+
+<audio src="audio/Southern Nights.mp3" poster="audio/images/campbell.jpg" title="Southern Nights" artist="Glen Campbell" album="Southern Nights" type="audio/mp3"></audio>
+<audio src="audio/A Fifth of Beethoven.mp3" poster="audio/images/snf.jpg" title="A Fifth of Beethoven" artist="Walter Murphy" album="Saturday Night Fever Soundtrack" type="audio/mp3"></audio>
+<audio src="audio/Aint No Sunshine.mp3" poster="audio/images/withers.jpg" title="Ain't No Sunshine" artist="Bill Withers" album="Just as I Am" type="audio/mp3"></audio>
+<audio src="audio/Tempted.mp3" poster="audio/images/squeeze.jpg" title="Tempted" artist="Squeeze" album="East Side Story" type="audio/mp3"></audio>
+<audio src="audio/Raspberry Beret.mp3" poster="audio/images/prince.jpg" title="Raspberry Beret" artist="Prince, The Revolution" album="Around the World in a Day" type="audio/mp3"></audio>
+<audio src="audio/abc.mp3" poster="audio/images/jackson5.jpg" title="ABC" artist="The Jackson Five" album="ABC" type="audio/mp3"></audio>
+</div>
+
+
+
+
+</body>
+<script language="javascript" src="js/audioplayer.js"></script>
+</html>

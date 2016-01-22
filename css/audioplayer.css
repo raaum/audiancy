@@ -1,0 +1,279 @@
+
+body {
+  font-family: 'Hind', sans-serif;
+  font-size: 16px;
+  margin-top: 250px;
+  text-align:center;
+  font-weight: 400;
+}
+div#audioplayer {
+  height: 250px;
+  width: 250px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  border-radius: 0px;
+  position: relative;
+  background-color: #fff;
+  background-position: center;
+  z-index: 3;
+  opacity: 1;
+	transition: background 5s ease-in-out;
+	-moz-transition: background 5s ease-in-out;
+	-webkit-transition: background 5s ease-in-out;
+	transition: opacity 5s ease-in-out;
+	-moz-transition: opacity 5s ease-in-out;
+	-webkit-transition: opacity 5s ease-in-out;
+}
+div#audioplayer.wrapper {
+/*  -webkit-filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.6));
+  filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.6));
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+*/
+  z-index: 3;
+}
+div.posterwrap {
+  position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	background: #fff;
+	transition: opacity 5s ease-in-out;
+	-moz-transition: opacity 5s ease-in-out;
+	-webkit-transition: opacity 5s ease-in-out;
+	z-index: 5;
+}
+div.canvaswrapper {
+background: transparent;
+position: absolute;
+left: 0px;
+top: 20px;
+width: 250px;
+height: 140px;
+-webkit-transition : opacity 5s ease-in-out;
+-moz-transition : opacity 5s ease-in-out;
+-o-transition : opacity 5s ease-in-out;
+transition : opacity 5s ease-in-out;
+z-index: 7;
+}
+canvas.visualizer, canvas.visualizer2 {
+  position: relative;
+  width: 250px;
+  height: 90px;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  z-index: 7;
+}
+canvas.visualizer2 {
+  width: 250px;
+  height: 90px;
+  position: relative;
+  transition: opacity 4s ease-in-out;
+  -moz-transition: opacity 4s ease-in-out;
+  -webkit-transition: opacity 4s ease-in-out;
+  -moz-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  transform: scaleY(-1);
+  -ms-filter: flipv; /*IE*/
+  filter: flipv;
+  margin-top: -1px;
+}
+#audioplayer > audio {
+  width: 180px;
+  padding: 0px;
+  padding: 0px;
+  border-radius: 0px;
+  color: #fff;
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+  background: #000;
+  opacity: 0;
+}
+#audioplayer > div#audio_mute {
+  position: absolute;
+  display: none;
+  z-index: 11;
+}
+#audioplayer > div#audio_volume {
+  position: absolute;
+  display: none;
+  z-index: 11;
+}
+#audioplayer > div#audio_duration {
+  position: absolute;
+  display: none;
+  z-index: 11;
+}
+#audioplayer > div#audio_album {
+  position: absolute;
+  font-size: 11px;
+  color: #333;
+  z-index: 10;
+  top: 25px;
+  left: 10px;
+  display: none;
+
+}
+
+#audioplayer > div#audio_artist {
+  text-align: left;
+  font-weight: 400;
+  position: absolute;
+  font-size: 12px;
+  color: #333;
+  z-index: 10;
+  top: 23px;
+  left: 10px;
+}
+#audioplayer > div#audio_title {
+  text-align: left;
+  font-weight: 700;
+  position: absolute;
+  font-size: 13px;
+  color: #333;
+  z-index: 10;
+  top: 7px;
+  left: 10px;  
+}
+#audioplayer > div#audio_time_elapsed {
+  text-align: left;
+  position: absolute;
+  font-weight: normal;
+  font-size: 11px;
+  color: #333;
+  z-index: 10;
+  bottom: 32px;
+  left: 7px;  
+}
+#audioplayer > div#audio_time_left {
+  text-align: right;
+  position: absolute;
+  font-weight: normal;
+  font-size: 11px;
+  color: #333;
+  z-index: 10;
+  bottom: 32px;
+  right: 7px;  
+}
+#audioplayer > div#audio_progress_bar {
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  height:10px;
+  background-color: #666;
+  color: #fff;
+  bottom: 54px;
+  left: 0px;
+  z-index: 20;
+}
+div#audio_progress_bar > span#audio_progress {
+  text-align: left;
+  background-color: #ccc;
+  border-right: 1px solid #fff;
+  display: block;
+  height: 8px;
+  width: 0%;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-transition : width 1s ease;
+  -moz-transition : width 1s ease;
+  -o-transition : width 1s ease;
+  transition : width 1s ease;
+  position: relative;
+  left: 0px;
+  top: 1px;
+  z-index: 21;
+}
+#audioplayer > div#titlebar {
+  background: transparent;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  z-index: 10;
+  height: 25px;
+  border-bottom: 1px solid #fff;
+}
+#audioplayer > div#controls {
+  width: 154px;
+  height: 48px;
+  position: absolute;
+  z-index: 26;
+  margin: 0 auto;
+  padding: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.col-previous { float: left; width: 18%; padding-top: 8px;  }
+.col-pause    { float: left; width: 18%; padding-top: 8px;  }
+.col-play     { display: inline-block; width: 28%;          }
+.col-next     { float: right; width: 18%; padding-top: 8px; }
+.col-stop     { float: right; width: 18%; padding-top: 8px; }
+
+
+#panel_button {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 30px;
+	height: 30px;
+	background: none;
+	border: 0px;
+	padding: 0px;
+	cursor: pointer;
+	transition: border 0.3s linear 0s;
+	z-index: 15;
+	color: #999;
+}
+#panel_button:hover {
+  color: #333;
+  -webkit-transition : all 100ms ease-in-out;
+  -moz-transition : all 100ms ease-in-out;
+  -o-transition : all 100ms ease-in-out;
+  transition : all 100ms ease-in-out;
+}
+#playlist_panel {
+	position: absolute;
+	bottom: -1px;
+	width: 100%;
+	height: 0px;
+	margin: 0px;
+	left: -1px;
+	background: #ddd;
+	transition: right 0.3s linear 0s;
+	z-index: 2;
+  -webkit-transition : all 200ms ease-in-out;
+  -moz-transition : all 200ms ease-in-out;
+  -o-transition : all 200ms ease-in-out;
+  transition : all 200ms ease-in-out;
+  border: 1px solid #ccc;
+/*
+  -webkit-filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.3));
+  filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.3));
+*/
+
+}
+
+#playlist_panel.expand {
+  bottom: -253px;
+  height: 250px;
+}
+
+#playlist_search { width: 0px; height: 0px; }
+#playlist_results { width: 0px; height: 0px;  }
+#playlist_pagination { width: 0px; height: 0px;  }
