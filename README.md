@@ -7,7 +7,7 @@ Use or distribution of this software requires a license.  Copyright 2016 Greg Ra
 Not ready for release.
 
 ###Features
-
+- Lightweight, only 24 KB unminified.
 - HTML5 and Web Audio API compatible
 - Mobile/Tablet device compatible
 - Cover art support, optional
