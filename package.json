@@ -1,0 +1,29 @@
+{
+  "name": "audiancy",
+  "version": "1.0.0",
+  "description": "Mini audio player with playlist ability, cover art support,  and waveform visualizations, written in JavaScript with optional PHP backend.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raaum/audiancy.git"
+  },
+  "keywords": [
+    "html5",
+    "audioplayer",
+    "audio",
+    "player",
+    "playlist",
+    "web",
+    "audio",
+    "api"
+  ],
+  "author": "greg.raaum@yahoo.com",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/raaum/audiancy/issues"
+  },
+  "homepage": "https://github.com/raaum/audiancy#readme"
+}
