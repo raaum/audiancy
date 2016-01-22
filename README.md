@@ -14,6 +14,9 @@ Written by and Copyright 2016 Greg Raaum.  Use or distribution of this software 
 - Custom icon font face with CSS styling
 - Custom waveform visualizations (optional)
 - Customizable colors, sizes
+- Progress bar
+- Custom controls
+- Duration/Elapsed/Remaining time visuals
 - Playlists (optional)
 - CSS animations and transitions between tracks, on events, and in dropdown
 - Platform independent code with no known third party library/framework incompatibilities
