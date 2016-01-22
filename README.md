@@ -11,13 +11,12 @@ Written by and Copyright 2016 Greg Raaum.  Use or distribution of this software 
 - HTML5 and Web Audio API compatible
 - Cover art support (optional)
 - Internationalization support
-- Custom icon font face with CSS styling support
+- Custom icon font face with CSS styling
 - Custom waveform visualizations (optional)
 - Customizable colors, sizes
-- Playlist optional
+- Playlists (optional)
 - CSS animations and transitions between tracks, on events, and in dropdown
-- 100% independent code
-- No known incompatibilities with other libraries/frameworks
+- Platform independent code with no known third party library/framework incompatibilities
 - MP3, WAV, OGG audio formats supported
 - more
 
