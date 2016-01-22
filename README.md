@@ -22,7 +22,8 @@ Not ready for release.
 - CSS animations and transitions between tracks, on events, and in dropdown
 - Platform independent code with no known third party library/framework incompatibilities
 - MP3, WAV, OGG audio formats supported
-- JSON and standard HTML audio element playlist compatible
+- JSON or standard HTML audio element playlist compatible
+- Read directory playlist support using backend PHP script
 
 ###Todo
 
