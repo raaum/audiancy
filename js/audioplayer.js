@@ -337,8 +337,8 @@ window.onload = function() {
     hours < 10 ? hours = '0' + hours : false;
     minutes < 10 ? minutes = '0' + minutes : false;
     seconds < 10 ? seconds = '0' + seconds : false;
-    var hourstime = hours + ':' + minutes + ':' + seconds;
-    var minstime = minutes + ':' + seconds;
+    var hourstime = hours+':'+ minutes+':'+ seconds;
+    var minstime = minutes+':'+ seconds;
     var result;
     hours > 0 ? result = hourstime : result = minstime;
     return result;
@@ -372,10 +372,10 @@ window.onload = function() {
       for (var i = 48; i < bufferLength; i++) {
         barHeight = dataArray[i];
         var red=105,red2=112,green=220,green2=188,blue=255,blue2=255;
-        canvasCtx.fillStyle = 'rgb(' + red + ',' + green + ',' + blue + ')';
-        canvasCtx2.fillStyle = 'rgb(' + red2 + ',' + green2 + ',' + blue2 + ')';
-        canvasCtx.fillRect(x, canvasHeight - barHeight, barWidth, barHeight);
-        canvasCtx2.fillRect(x, canvasHeight - barHeight, barWidth, barHeight);
+        canvasCtx.fillStyle = 'rgb('+red+','+green+','+blue+')';
+        canvasCtx2.fillStyle = 'rgb('+red2+','+green2+','+blue2+')';
+        canvasCtx.fillRect(x, canvasHeight-barHeight, barWidth, barHeight);
+        canvasCtx2.fillRect(x, canvasHeight-barHeight, barWidth, barHeight);
         x += barWidth + 0;
       }
     };
