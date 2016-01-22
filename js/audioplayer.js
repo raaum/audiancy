@@ -253,6 +253,7 @@ window.onload = function() {
     function addListeners() {
       listeners[currentTrackCount] = 1;
       console.log('Adding listeners for playing, ended, pause');
+
       audioElement.addEventListener("playing", function(event) {
         isPlaying[currentTrackCount] = true;
         removePoster();
@@ -260,6 +261,7 @@ window.onload = function() {
         event.preventDefault();
         console.log('Next up is ' + title[nextTrack]);
       });
+
       audioElement.addEventListener("ended", function(event) {
         if (trackProgress) { clearInterval(trackProgress); }
         console.log(lang['playended']);
@@ -271,6 +273,7 @@ window.onload = function() {
         event.preventDefault();
       });
       console.log('Adding pause listener for' +' '+ title[currentTrackCount]);
+
       audioElement.addEventListener("pause", function(event) {
         logEvent(lang['paused'], audioElement.currentTime);
         getPoster();
@@ -303,6 +306,7 @@ window.onload = function() {
     posterwrap.style.opacity = 1;
     canvaswrapper.style.opacity = 1;
   }
+
   panelElement.onclick = function(event) {
     playlistPanel.classList.toggle("expand");
     event.preventDefault();
