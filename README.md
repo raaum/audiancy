@@ -28,7 +28,6 @@ Not ready for release.
 - Can generate a JSON playlist client side from a directory of audio files server side using an AJAX call to a backend script.  PHP example provided.
 
 ###Todo
-
 - Playlist in dropdown
 - Pagination for longer playlists
 - Iframe support
