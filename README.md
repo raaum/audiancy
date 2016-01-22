@@ -2,6 +2,8 @@
 
 Mini audio player with playlist ability, cover art support,  and waveform visualizations, written in JavaScript with optional PHP backend.  Audiancy does not utilize any third party code.
 
+![](screenshots/player.png)
+
 Use or distribution of this software requires a license.  Copyright 2016 Greg Raaum.
 
 Not ready for release.
@@ -35,6 +37,3 @@ Not ready for release.
 - Volume controls
 - Make draggable
 - Remote and cloud playlists
-
-###Screenshots
-![](screenshots/player.png)
