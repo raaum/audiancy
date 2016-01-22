@@ -23,7 +23,7 @@ Not ready for release.
 - Platform independent code with no known third party library/framework incompatibilities
 - MP3, WAV, OGG audio formats support
 - JSON or standard HTML audio element playlist compatible
-- Read directory playlist support using backend PHP script
+- Can generate a JSON playlist client side from a directory of audio files server side using an AJAX call to a backend script.  PHP example provided.
 
 ###Todo
 
