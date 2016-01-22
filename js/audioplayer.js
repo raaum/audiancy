@@ -155,11 +155,11 @@ window.onload = function() {
   function showPlayList() {}
 
   function logError(msg) { errorlog ?
-      console.log(lang['error']+': '+msg) : null;
+    console.log(lang['error']+': '+msg) : null;
   }
 
   function logEvent(msg, msgtime) {eventlog ? 
-      console.log(lang['event']+' '+msg+' '+lang['time']+' '+ msgtime) : null;
+    console.log(lang['event']+' '+msg+' '+lang['time']+' '+ msgtime) : null;
   }
 
   function populateDivs() {
@@ -213,6 +213,7 @@ window.onload = function() {
     playList[prevTrack] ? setClass('prev', '1') : setClass('prev', '0');
     audioElement = playList[currentTrackCount];
     populateDivs(), getPoster(), audioElement.load;
+
     if (audioElement.readyState === 4) {
       if (!sourceAudio[trackindex]) { addAudioSource(trackindex); }
       isLoaded[trackindex] = 1;
@@ -224,6 +225,7 @@ window.onload = function() {
 
     function setClass(el, ebool) {
       el == 'next' ? el = nextElement : el = prevElement;
+
       if (ebool == 1) {
         el.classList.remove("notavailable");
         el.classList.add("available");
