@@ -10,18 +10,18 @@ Not ready for release.
 
 - HTML5 and Web Audio API compatible
 - Mobile/Tablet device compatible
-- Cover art support (optional)
+- Cover art support, optional
 - Internationalization support
 - Custom icon font face with CSS styling
-- Custom waveform visualizations (optional)
+- Canvas element waveform visualizations, optional
 - Customizable colors, sizes
-- Progress bar
-- Custom controls
+- Progress bar with elapsed/remaining time transitions
+- Custom player controls
 - Duration/Elapsed/Remaining time visuals
-- Playlists (optional)
+- Playlist or single track support
 - CSS animations and transitions between tracks, on events, and in dropdown
 - Platform independent code with no known third party library/framework incompatibilities
-- MP3, WAV, OGG audio formats supported
+- MP3, WAV, OGG audio formats support
 - JSON or standard HTML audio element playlist compatible
 - Read directory playlist support using backend PHP script
 
