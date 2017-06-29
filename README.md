@@ -4,7 +4,10 @@ Mini audio player with playlist ability, cover art support,  and waveform visual
 
 ![](screenshots/player.png)
 
-###Features###
+##
+Features
+##
+
 - Lightweight: 13 KB unminified
 - HTML5 and Web Audio API compatible
 - Mobile/Tablet device compatible
@@ -23,7 +26,9 @@ Mini audio player with playlist ability, cover art support,  and waveform visual
 - JSON or standard HTML audio element playlist compatible
 - Can generate a JSON playlist client side from a directory of audio files server side using an AJAX call to a backend script.  PHP example provided.
 
-###Todo###
+##
+Todo
+##
 - Playlist in dropdown
 - Pagination for longer playlists
 - Iframe support
