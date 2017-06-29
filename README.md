@@ -6,8 +6,6 @@ Mini audio player with playlist ability, cover art support,  and waveform visual
 
 ##
 Features
-##
-
 - Lightweight: 13 KB unminified
 - HTML5 and Web Audio API compatible
 - Mobile/Tablet device compatible
@@ -28,7 +26,6 @@ Features
 
 ##
 Todo
-##
 - Playlist in dropdown
 - Pagination for longer playlists
 - Iframe support
